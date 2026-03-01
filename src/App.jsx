@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from 'react';
-import { Factory, Beam } from 'vexflow';
+import React, { useEffect, useRef, useState } from 'react';
+import { Factory, Beam, Fraction } from 'vexflow';
 import './App.css';
 import jsonData from './mock-data.json'
 import { convertJsonToVexString } from './parser';
@@ -8,7 +8,7 @@ function App() {
   const containerRef = useRef(null);
 
 
-
+  const [beamsEnabled, setBeamsEnabled] = useState(true);
 
   useEffect(() => {
     if (!containerRef.current || !jsonData) return;
@@ -27,8 +27,8 @@ function App() {
         return;
       }
 
-      const timeSig = metadata?.timeSignature || "4/4";
-      const rawKey = metadata?.key || "C Major"; // e.g., "Bb Major" or "A Minor"
+      const timeSig = metadata?.timeSignature || "4/4"; // defaults to 4/4
+      const rawKey = metadata?.key || "C Major"; //defaults to C major
 
       //Get the first word (e.g., "Bb" or "A")
       let keySig = rawKey.split(' ')[0];
@@ -40,9 +40,9 @@ function App() {
 
       const measures = convertJsonToVexString(exercise, timeSig);
 
-      const STAVE_WIDTH = 250;
+      const STAVE_WIDTH = 400; 
       const STAVE_HEIGHT = 160;
-      const MEASURES_PER_LINE = 3;
+      const MEASURES_PER_LINE = 2;
 
       const vf = new Factory({
         renderer: {
@@ -70,14 +70,31 @@ function App() {
         if (i === 0) stave.addTimeSignature(timeSig);
 
         //Connect the notes to this specific stave
-        const voice = score.voice(score.notes(measures[i]), {time: timeSig});
+        const voice = score.voice(score.notes(measures[i]), { time: timeSig });
 
         vf.Formatter().joinVoices([voice]).formatToStave([voice], stave);
 
-        const notes = voice.getTickables();
-        const beams = Beam.generateBeams(notes);
+        //beam button logic
+        if (beamsEnabled) {
+          try {
 
-        beams.forEach(b => b.setContext(vf.getContext()).draw());
+            const notes = voice.getTickables();
+            const beams = Beam.generateBeams(notes,
+              {
+                groups: [new Fraction(1, 4)]
+              }
+
+            );
+
+            beams.forEach(b => b.setContext(vf.getContext()).draw());
+          } catch (e) {
+            console.error("beaming failed", e);
+          }
+
+        }
+
+
+
       }
 
       //Draw everything at once at the end
@@ -86,7 +103,7 @@ function App() {
     } catch (error) {
       console.error("VexFlow Error:", error);
     }
-  }, []);
+  }, [beamsEnabled]);
 
 
 
@@ -102,6 +119,23 @@ function App() {
           Generative Music Notation Prototype
         </p>
       </header>
+
+      <div style={{ padding: '20px', textAlign: 'center' }}>
+        <button
+          onClick={() => setBeamsEnabled(!beamsEnabled)}
+          style={{
+            padding: '10px 20px',
+            backgroundColor: beamsEnabled ? '#ff4444' : '#44ff44',
+            color: 'white',
+            border: 'none',
+            borderRadius: '5px',
+            cursor: 'pointer',
+            fontWeight: 'bold'
+          }}
+        >
+          {beamsEnabled ? 'DISABLE BEAMS' : 'ENABLE BEAMS'}
+        </button>
+      </div>
 
       <main className="notation-container">
         <div ref={containerRef}></div>

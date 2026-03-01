@@ -1,16 +1,397 @@
-{
-  "metadata": {
-    "key": "A Minor",
-    "timeSignature": "4/4",
-    "instrument": "Violin"
+[
+  {
+    "note": "C4",
+    "duration": 2,
+    "cumulative_duration": 2
   },
-  "exercise": [
-    { "note": "A4", "duration": 4, "cumulative_duration": 4 },
-    { "note": "C5", "duration": 4, "cumulative_duration": 8 },
-    { "note": "E5", "duration": 4, "cumulative_duration": 12 },
-    { "note": "A5", "duration": 4, "cumulative_duration": 16 },
-    { "note": "G5", "duration": 6, "cumulative_duration": 22 },
-    { "note": "F5", "duration": 2, "cumulative_duration": 24 },
-    { "note": "E5", "duration": 8, "cumulative_duration": 32 }
-  ]
-}
+  {
+    "note": "C4",
+    "duration": 2,
+    "cumulative_duration": 4
+  },
+  {
+    "note": "A4",
+    "duration": 2,
+    "cumulative_duration": 6
+  },
+  {
+    "note": "B4",
+    "duration": 2,
+    "cumulative_duration": 8
+  },
+  {
+    "note": "E4",
+    "duration": 2,
+    "cumulative_duration": 10
+  },
+  {
+    "note": "C4",
+    "duration": 2,
+    "cumulative_duration": 12
+  },
+  {
+    "note": "B4",
+    "duration": 2,
+    "cumulative_duration": 14
+  },
+  {
+    "note": "F4",
+    "duration": 1,
+    "cumulative_duration": 15
+  },
+  {
+    "note": "B4",
+    "duration": 1,
+    "cumulative_duration": 16
+  },
+  {
+    "note": "G4",
+    "duration": 2,
+    "cumulative_duration": 18
+  },
+  {
+    "note": "B4",
+    "duration": 2,
+    "cumulative_duration": 20
+  },
+  {
+    "note": "C4",
+    "duration": 2,
+    "cumulative_duration": 22
+  },
+  {
+    "note": "G4",
+    "duration": 2,
+    "cumulative_duration": 24
+  },
+  {
+    "note": "G4",
+    "duration": 2,
+    "cumulative_duration": 26
+  },
+  {
+    "note": "F4",
+    "duration": 2,
+    "cumulative_duration": 28
+  },
+  {
+    "note": "A4",
+    "duration": 2,
+    "cumulative_duration": 30
+  },
+  {
+    "note": "A4",
+    "duration": 2,
+    "cumulative_duration": 32
+  },
+  {
+    "note": "B4",
+    "duration": 2,
+    "cumulative_duration": 34
+  },
+  {
+    "note": "D4",
+    "duration": 2,
+    "cumulative_duration": 36
+  },
+  {
+    "note": "F4",
+    "duration": 2,
+    "cumulative_duration": 38
+  },
+  {
+    "note": "F4",
+    "duration": 2,
+    "cumulative_duration": 40
+  },
+  {
+    "note": "C4",
+    "duration": 1,
+    "cumulative_duration": 41
+  },
+  {
+    "note": "F4",
+    "duration": 1,
+    "cumulative_duration": 42
+  },
+  {
+    "note": "B4",
+    "duration": 1,
+    "cumulative_duration": 43
+  },
+  {
+    "note": "B4",
+    "duration": 2,
+    "cumulative_duration": 45
+  },
+  {
+    "note": "D4",
+    "duration": 1,
+    "cumulative_duration": 46
+  },
+  {
+    "note": "E4",
+    "duration": 1,
+    "cumulative_duration": 47
+  },
+  {
+    "note": "G4",
+    "duration": 1,
+    "cumulative_duration": 48
+  },
+  {
+    "note": "C4",
+    "duration": 1,
+    "cumulative_duration": 49
+  },
+  {
+    "note": "B4",
+    "duration": 2,
+    "cumulative_duration": 51
+  },
+  {
+    "note": "A4",
+    "duration": 1,
+    "cumulative_duration": 52
+  },
+  {
+    "note": "D4",
+    "duration": 2,
+    "cumulative_duration": 54
+  },
+  {
+    "note": "B4",
+    "duration": 1,
+    "cumulative_duration": 55
+  },
+  {
+    "note": "G4",
+    "duration": 2,
+    "cumulative_duration": 57
+  },
+  {
+    "note": "C4",
+    "duration": 2,
+    "cumulative_duration": 59
+  },
+  {
+    "note": "A4",
+    "duration": 1,
+    "cumulative_duration": 60
+  },
+  {
+    "note": "A4",
+    "duration": 2,
+    "cumulative_duration": 62
+  },
+  {
+    "note": "B4",
+    "duration": 2,
+    "cumulative_duration": 64
+  },
+  {
+    "note": "B4",
+    "duration": 1,
+    "cumulative_duration": 65
+  },
+  {
+    "note": "F4",
+    "duration": 1,
+    "cumulative_duration": 66
+  },
+  {
+    "note": "A4",
+    "duration": 1,
+    "cumulative_duration": 67
+  },
+  {
+    "note": "A4",
+    "duration": 2,
+    "cumulative_duration": 69
+  },
+  {
+    "note": "G4",
+    "duration": 2,
+    "cumulative_duration": 71
+  },
+  {
+    "note": "F4",
+    "duration": 2,
+    "cumulative_duration": 73
+  },
+  {
+    "note": "B4",
+    "duration": 1,
+    "cumulative_duration": 74
+  },
+  {
+    "note": "E4",
+    "duration": 2,
+    "cumulative_duration": 76
+  },
+  {
+    "note": "B4",
+    "duration": 1,
+    "cumulative_duration": 77
+  },
+  {
+    "note": "E4",
+    "duration": 1,
+    "cumulative_duration": 78
+  },
+  {
+    "note": "G4",
+    "duration": 1,
+    "cumulative_duration": 79
+  },
+  {
+    "note": "B4",
+    "duration": 2,
+    "cumulative_duration": 81
+  },
+  {
+    "note": "F4",
+    "duration": 2,
+    "cumulative_duration": 83
+  },
+  {
+    "note": "B4",
+    "duration": 2,
+    "cumulative_duration": 85
+  },
+  {
+    "note": "A4",
+    "duration": 1,
+    "cumulative_duration": 86
+  },
+  {
+    "note": "B4",
+    "duration": 1,
+    "cumulative_duration": 87
+  },
+  {
+    "note": "G4",
+    "duration": 1,
+    "cumulative_duration": 88
+  },
+  {
+    "note": "B4",
+    "duration": 2,
+    "cumulative_duration": 90
+  },
+  {
+    "note": "E4",
+    "duration": 2,
+    "cumulative_duration": 92
+  },
+  {
+    "note": "C4",
+    "duration": 2,
+    "cumulative_duration": 94
+  },
+  {
+    "note": "B4",
+    "duration": 2,
+    "cumulative_duration": 96
+  },
+  {
+    "note": "D4",
+    "duration": 2,
+    "cumulative_duration": 98
+  },
+  {
+    "note": "D4",
+    "duration": 1,
+    "cumulative_duration": 99
+  },
+  {
+    "note": "G4",
+    "duration": 1,
+    "cumulative_duration": 100
+  },
+  {
+    "note": "C4",
+    "duration": 1,
+    "cumulative_duration": 101
+  },
+  {
+    "note": "E4",
+    "duration": 2,
+    "cumulative_duration": 103
+  },
+  {
+    "note": "A4",
+    "duration": 2,
+    "cumulative_duration": 105
+  },
+  {
+    "note": "D4",
+    "duration": 2,
+    "cumulative_duration": 107
+  },
+  {
+    "note": "D4",
+    "duration": 2,
+    "cumulative_duration": 109
+  },
+  {
+    "note": "F4",
+    "duration": 1,
+    "cumulative_duration": 110
+  },
+  {
+    "note": "A4",
+    "duration": 1,
+    "cumulative_duration": 111
+  },
+  {
+    "note": "C4",
+    "duration": 2,
+    "cumulative_duration": 113
+  },
+  {
+    "note": "C4",
+    "duration": 1,
+    "cumulative_duration": 114
+  },
+  {
+    "note": "E4",
+    "duration": 1,
+    "cumulative_duration": 115
+  },
+  {
+    "note": "A4",
+    "duration": 2,
+    "cumulative_duration": 117
+  },
+  {
+    "note": "A4",
+    "duration": 2,
+    "cumulative_duration": 119
+  },
+  {
+    "note": "G4",
+    "duration": 2,
+    "cumulative_duration": 121
+  },
+  {
+    "note": "D4",
+    "duration": 2,
+    "cumulative_duration": 123
+  },
+  {
+    "note": "B4",
+    "duration": 2,
+    "cumulative_duration": 125
+  },
+  {
+    "note": "D4",
+    "duration": 1,
+    "cumulative_duration": 126
+  },
+  {
+    "note": "C4",
+    "duration": 2,
+    "cumulative_duration": 128
+  }
+]
