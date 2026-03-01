@@ -1,0 +1,16 @@
+{
+  "metadata": {
+    "key": "A Minor",
+    "timeSignature": "4/4",
+    "instrument": "Violin"
+  },
+  "exercise": [
+    { "note": "A4", "duration": 4, "cumulative_duration": 4 },
+    { "note": "C5", "duration": 4, "cumulative_duration": 8 },
+    { "note": "E5", "duration": 4, "cumulative_duration": 12 },
+    { "note": "A5", "duration": 4, "cumulative_duration": 16 },
+    { "note": "G5", "duration": 6, "cumulative_duration": 22 },
+    { "note": "F5", "duration": 2, "cumulative_duration": 24 },
+    { "note": "E5", "duration": 8, "cumulative_duration": 32 }
+  ]
+}

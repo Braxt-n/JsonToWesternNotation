@@ -1,0 +1,12 @@
+/* src/index.css */
+body {
+  margin: 0;
+  padding: 0;
+  display: block; /* Overrides the Vite flex centering */
+  background-color: #f4f4f2; /* Soft off-white for the "desk" background */
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+}

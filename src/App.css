@@ -1,0 +1,45 @@
+/* src/App.css */
+.app-container {
+  max-width: 850px; /* Standard A4-ish width */
+  margin: 50px auto; /* Centers the "page" on the screen */
+  padding: 80px 60px;
+  background-color: #ffffff; /* Pure white for the "paper" */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08); /* Subtle page shadow */
+  min-height: 1000px;
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.header h1 {
+  font-family: "Garamond", "Times New Roman", serif; /* Classic music font */
+  font-size: 3rem;
+  margin: 0;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  font-family: "Garamond", "Times New Roman", serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+.notation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Ensures staves are centered within the paper */
+  transform: scale(1.1)
+}
+
+/* Ensures the VexFlow SVG doesn't overflow */
+svg {
+  max-width: 100%;
+  height: auto;
+}
